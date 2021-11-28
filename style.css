@@ -1,0 +1,198 @@
+:root {
+    --black: #4E5150;
+    --lightGrey: #F2F2F2;
+    --middleGrey: #E0E0E0;
+    --darkGrey: #828282;
+    --orange:  #F2994A;
+}
+
+body {
+    font-family: 'Montserrat';
+    color: var(--black);
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+.card {
+    background-color: var(--lightGrey);
+    border-radius: 12px;
+    border: none;
+}
+
+.card img {
+    max-width: 140px;
+    align-self: flex-start;
+    border-radius: 12px;
+}
+
+.form-group label {
+    font-size: 12px;
+}
+
+
+.input-group-text {
+    background-color: transparent !important;
+    border: 1px solid var(--darkGrey);
+}
+
+.input-group-prepend .input-group-text {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-right: none !important;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group .badge {
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.input-group-text i {
+    color: var(--darkGrey);
+}
+  
+.form-control {
+    border-top-right-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+    height: 56px;
+    border: 1px solid var(--darkGrey);
+    border-left: none !important;
+}
+
+.btn {
+    background-color: var(--orange);
+    border-radius: 12px;
+    border: none;
+    width: 166px;
+    float: right;
+}
+
+.discount {
+    color: RED;
+    font-size: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.quantity {
+    border: 1px solid var(--darkGrey);
+    border-radius: 12px;
+    width: 140px;
+}
+
+.quantity i {
+    background-color: var(--middleGrey);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+footer {
+    color: #A9A9A9;
+    font-size: 14px;
+}
+
+
+
+  
+  .btn {
+    width: 100%;
+    background: #064887;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 5px;
+  }
+  
+
+  
+  
+  
+  @media screen and (max-width: 420px) {
+    .card_grp {
+      flex-direction: column;
+    }
+    .expiry_date {
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+    .expiry_date .expiry_input {
+      width: 48%;
+      margin: 0;
+    }
+    .cvc {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .cvc .cvc_input {
+      width: 48%;
+    }
+    .cvc_img .img {
+      right: 26px;
+    }
+  }
+  
+  
+  
+
+
+  
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    h4, input[placeholder], input[value], option[selected] {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h3, .discount {
+        font-size: 16px;
+    }
+    .form-group {
+        margin-bottom: 8px;
+    }
+    .form-group:last-child {
+        margin-bottom: 16px;
+    }
+    .form-group label, .old-price {
+        font-size: 12px;
+    }
+    .form-control {
+        height: 40px;
+    }
+    .card img {
+        max-width: 120px;
+    }
+    .quantity {
+        max-width: 120px;
+    }
+}
